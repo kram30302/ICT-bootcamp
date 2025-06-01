@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            display: flex;
+            background-color: blueviolet;
+            height:200px;
+            /*flex-direction: row; */
+           /* flex-wrap: wrap-reverse;*/
+           flex-flow: row wrap;
+           /*it directs the both flex direction and flex wrap*/
+           justify-content: space-evenly;
+            /* align-items: center; */
+        }
+        .container > div {
+            background-color: greenyellow;
+            margin: 10px;
+            padding: 20px;
+            font-size: 40px;
+            height: 50px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+  <marquee>  <h1>-----Flex Container-----Flex-Box----------Flex Container-----Flex-Box-----Flex Container-----Flex-Box-----Flex Container-----Flex-Box-----Flex Container-----Flex-Box</h1></marquee>
+    <div class="container">
+        <div style="order: 3; align-self: center;">1</div>
+        <div style="order: 5;">2</div>
+        <div style="order: 1;">3</div>
+        <div style="order: 2;">4</div>
+        <div style="order: 4;">5</div>
+        <!-- <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div> -->
+        
+    </div>
+</body>
+</html>
